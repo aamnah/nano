@@ -1,8 +1,19 @@
 syntax "css" "\.css$"
-color red     "."
-color yellow  start="\{" end="\}"
-color brightwhite   start=":" end="([;^\{]|$)"
-color brightblue    ":active|:focus|:hover|:link|:visited|:link|:after|:before|$"
-color brightblue    start="\/\*" end="\\*/"
-color green         ";|:|\{|\}"
 
+# Selectors
+color red "."
+
+# Properties
+color yellow start="\{" end="\}"
+
+# Values
+color brightwhite start=":" end="([;^\{]|$)"
+
+# Pseudo Elements
+color magenta ":active|:focus|:hover|:link|:visited|:link|:after|:before|$"
+
+# Comments
+color cyan start="\/\*" end="\\*/"
+
+# Separators        
+color green ";|:|\{|\}"
