@@ -1,5 +1,5 @@
 Customizing your terminal
----
+----
 
 ```
 PS1="[\u @ \h] \w > "
