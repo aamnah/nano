@@ -1,0 +1,32 @@
+syntax "markdown" "\.txt$" "\.text$" "\.md$" "\.markdown$"
+# Quotations
+color cyan "^>.*"
+# Emphasis
+color green "_[^_]*_"
+color green "\*[^\*]*\*"
+# Strong emphasis
+color green "\*\*[^\*]*\*\*"
+color green "__[\_]*__"
+# Underline headers
+color red "^====(=*)"
+color red "^----(-*)"
+# Hash headers
+color red "^#.*"
+# Linkified URLs (and inline html tags)
+color magenta start="<" end=">"
+# Links
+color magenta "\[.*\](\([^\)]*\))?"
+# Link id's:
+color magenta "^\[.*\]:( )+.*"
+# Links and inline images
+color magenta start="!\[" end="\]"
+color magenta start="\[" end="\]"
+# Code spans
+color yellow "`[^`]*`"
+color yellow "``([^``]*)``"
+# Code blocks
+color yellow start="```" end="```"
+# indent block disabled, because indented lines aren't always code blocks
+# color yellow "^(    ).*"
+# Lists
+color yellow "^( )*(\*|\+|\-|[0-9]+\.) "
