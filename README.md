@@ -10,7 +10,7 @@ You first need to specify a line with the name of the syntax and the files that 
 ```
 syntax "c-file" "\.(c|h)$"
 ```
-means that you want all the .c and .h files to be highlighted with the content that you specify after this line, with some regular expressions. For example, add the following line after the previous line to highlight all the integer numbers (positive or negative) in red :
+means that you want all the .c and .h files to be highlighted with the content that you specify after this line, with some **regular expressions**. For example, add the following line after the previous line to highlight all the integer numbers (positive or negative) in red :
 
 ```
 color red "\<[-+]?([1-9][0-9]*|0)?\>"
